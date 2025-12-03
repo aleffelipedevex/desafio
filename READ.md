@@ -1,5 +1,17 @@
 # Instalação
 
+# UP Containers Docker
+- sudo apt update
+- sudo apt install -y docker.io docker-compose
+- sudo systemctl enable --now docker
+- docker --version
+- docker-compose --version
+- docker-compose up -d
+
+# Versão .NET 8 SDK
+
+- dotnet --list-sdks
+
 # Projeto Application
 - dotnet add package Microsoft.IdentityModel.Tokens --version 8.15.0 --project src/Application/Application.csproj
 
@@ -24,16 +36,29 @@
 - dotnet run --project src/API
 
 # Run Frontend
+- versão node 22 LTS
 - path: src/Frontend
+- npm install
 - npm run dev
 
-# UP Containers Docker
-- docker-compose up -d
+# Adicione um usuário via phpmyadmin
+- INSERT INTO `Users` (
+        `Id`, `Name`, `Email`, `PasswordHash`, `CreatedAt`, `RefreshToken`, `RefreshTokenExpiryTime`, `Role`
+    ) VALUES (
+        1,
+        'Teste',
+        'teste@teste.com',
+        '$2a$11$NDHHdhjo9WQzkGJF1joH6.XjVJ1Fcp3Wam3aDF2apQDiDtcA1xYUe',
+        NOW(),
+        NULL,
+        NULL,
+        'User'
+    );
 
 # Banco de dados
 - database: desafio
-- user: desafio
-- password: 123456
+- user: root
+- password: root
 
 # Aessar Banco de Dados (phpmyadmin)
 - http://localhost:8080

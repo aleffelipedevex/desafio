@@ -151,3 +151,4 @@
 /projects/desafio/src/API/obj/Debug/net8.0/API.pdb
 /projects/desafio/src/API/obj/Debug/net8.0/API.genruntimeconfig.cache
 /projects/desafio/src/API/obj/Debug/net8.0/ref/API.dll
+/projects/desafio/src/API/obj/Debug/net8.0/API.sourcelink.json

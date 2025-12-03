@@ -13,3 +13,4 @@
 /projects/desafio/src/Application/obj/Debug/net8.0/refint/Application.dll
 /projects/desafio/src/Application/obj/Debug/net8.0/Application.pdb
 /projects/desafio/src/Application/obj/Debug/net8.0/ref/Application.dll
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.sourcelink.json
