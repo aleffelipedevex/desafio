@@ -1,0 +1,11 @@
+/projects/desafio/src/Core/bin/Debug/net8.0/Core.deps.json
+/projects/desafio/src/Core/bin/Debug/net8.0/Core.dll
+/projects/desafio/src/Core/bin/Debug/net8.0/Core.pdb
+/projects/desafio/src/Core/obj/Debug/net8.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/projects/desafio/src/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache
+/projects/desafio/src/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs
+/projects/desafio/src/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache
+/projects/desafio/src/Core/obj/Debug/net8.0/Core.dll
+/projects/desafio/src/Core/obj/Debug/net8.0/refint/Core.dll
+/projects/desafio/src/Core/obj/Debug/net8.0/Core.pdb
+/projects/desafio/src/Core/obj/Debug/net8.0/ref/Core.dll

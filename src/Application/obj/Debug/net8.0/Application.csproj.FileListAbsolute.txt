@@ -1,0 +1,15 @@
+/projects/desafio/src/Application/bin/Debug/net8.0/Application.deps.json
+/projects/desafio/src/Application/bin/Debug/net8.0/Application.dll
+/projects/desafio/src/Application/bin/Debug/net8.0/Application.pdb
+/projects/desafio/src/Application/bin/Debug/net8.0/Core.dll
+/projects/desafio/src/Application/bin/Debug/net8.0/Core.pdb
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.csproj.CopyComplete
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.dll
+/projects/desafio/src/Application/obj/Debug/net8.0/refint/Application.dll
+/projects/desafio/src/Application/obj/Debug/net8.0/Application.pdb
+/projects/desafio/src/Application/obj/Debug/net8.0/ref/Application.dll
