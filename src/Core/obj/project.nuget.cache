@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "/6/ZsU6TWphdI6yVwAHnOYOAAC+BkjpDnia1fznP5O9zTHoYQCDg8LIgdq9iJ7vtiYPidjMJWr7pPYrvbhYgog==",
+  "dgSpecHash": "peH8qjrPr9g=",
   "success": true,
   "projectFilePath": "/projects/desafio/src/Core/Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/root/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }

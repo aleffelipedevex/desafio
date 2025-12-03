@@ -19,7 +19,6 @@ export default function Sidebar({ active }) {
 
         const data = response.data;
 
-        // data.genres → array de { id, name }
         setCategories(data.genres || []);
       } catch (err) {
         console.error("Erro ao carregar gêneros:", err);

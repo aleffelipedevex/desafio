@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gxPVcnABr3GCdpftdWsXswxREKBVn67vXWhS96yndO/uaXxcchYAbCBDGSprbSohkfgtH0LyuKtAQXxJdY/wmg==",
+  "dgSpecHash": "eiorRFbDHK8=",
   "success": true,
   "projectFilePath": "/projects/desafio/src/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -52,7 +52,9 @@
     "/root/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/root/.nuget/packages/system.text.encodings.web/9.0.0/system.text.encodings.web.9.0.0.nupkg.sha512",
     "/root/.nuget/packages/system.text.json/9.0.0/system.text.json.9.0.0.nupkg.sha512",
-    "/root/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+    "/root/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/root/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
   ],
   "logs": []
 }

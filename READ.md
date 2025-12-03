@@ -8,8 +8,20 @@
 - docker-compose --version
 - docker-compose up -d
 
-# Versão .NET 8 SDK
+# Versão .NET 9 SDK
 
+# Baixa o instalador
+ - wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
+ - chmod +x dotnet-install.sh
+
+# Instala o SDK 9
+- ./dotnet-install.sh --channel 9.0 --install-dir $HOME/dotnet
+
+# Configura variáveis de ambiente
+- export DOTNET_ROOT=$HOME/dotnet
+- export PATH=$DOTNET_ROOT:$PATH
+
+# Verifica instalação
 - dotnet --list-sdks
 
 # Projeto Application
@@ -31,6 +43,10 @@
 - dotnet add package StackExchange.Redis --version 2.10.1 --project src/API/API.csproj
 - dotnet add package Swashbuckle.AspNetCore --version 6.6.2 --project src/API/API.csproj
 - dotnet add package System.IdentityModel.Tokens.Jwt --version 8.15.0 --project src/API/API.csproj
+
+# var
+- export TMDB__BaseUrl="https://api.themoviedb.org/3/"
+- export TMDB__ApiKey="7faf7d51482ea57cccd5304e3ac50413"
 
 # Run API
 - dotnet run --project src/API
