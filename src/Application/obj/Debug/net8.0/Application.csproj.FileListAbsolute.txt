@@ -9,8 +9,8 @@
 /projects/desafio/src/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
 /projects/desafio/src/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
 /projects/desafio/src/Application/obj/Debug/net8.0/Application.sourcelink.json
+/projects/desafio/src/Application/obj/Debug/net8.0/Applicat.44B5EDA2.Up2Date
 /projects/desafio/src/Application/obj/Debug/net8.0/Application.dll
 /projects/desafio/src/Application/obj/Debug/net8.0/refint/Application.dll
 /projects/desafio/src/Application/obj/Debug/net8.0/Application.pdb
 /projects/desafio/src/Application/obj/Debug/net8.0/ref/Application.dll
-/projects/desafio/src/Application/obj/Debug/net8.0/Applicat.44B5EDA2.Up2Date

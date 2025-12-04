@@ -44,7 +44,8 @@
 - dotnet add package Swashbuckle.AspNetCore --version 6.6.2 --project src/API/API.csproj
 - dotnet add package System.IdentityModel.Tokens.Jwt --version 8.15.0 --project src/API/API.csproj
 
-# var
+# Variaveis de ambiente
+- export JWT__KEY="b0228f6f35f3a0139552f851c83dccff93a7262c46bf10a83120cf1d18701ffb"
 - export TMDB__BaseUrl="https://api.themoviedb.org/3/"
 - export TMDB__ApiKey="7faf7d51482ea57cccd5304e3ac50413"
 

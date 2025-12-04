@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace API.Controllers
 {
@@ -27,9 +28,17 @@ namespace API.Controllers
         [Authorize]
         public async Task<IActionResult> Me()
         {
-            // Pega a claim "sub" que armazenamos com o user.Id
-            var userIdClaim = User.FindFirst(JwtRegisteredClaimNames.Sub);
-            if (userIdClaim == null) return Unauthorized();
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Unauthorized();
+            }
+
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+
+            if (userIdClaim == null)
+            {
+                return Unauthorized();
+            }
 
             var userId = int.Parse(userIdClaim.Value);
 
@@ -38,7 +47,10 @@ namespace API.Controllers
                 .Select(u => new { u.Id, u.Name, u.Email, u.Role })
                 .FirstOrDefaultAsync();
 
-            if (user == null) return NotFound();
+            if (user == null)
+            {
+                return NotFound();
+            }
 
             return Ok(user);
         }

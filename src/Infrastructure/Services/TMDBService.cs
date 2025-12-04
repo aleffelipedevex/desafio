@@ -1,5 +1,4 @@
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
 using System.Net.Http.Headers;
 using System.Text.Json;
 
@@ -9,20 +8,13 @@ namespace Infrastructure.Services
     {
         private readonly HttpClient _http;
         private readonly IConfiguration _config;
-        private readonly ILogger<TMDBService> _logger;
 
-        public TMDBService(IConfiguration config, ILogger<TMDBService> logger)
+        public TMDBService(IConfiguration config)
         {
             _config = config;
-            _logger = logger;
 
             var baseUrl = _config["TMDB:BaseUrl"];
             var apiKey = _config["TMDB:ApiKey"];
-
-            // LOG DAS VARIÁVEIS DE AMBIENTE
-            _logger.LogInformation("TMDB BaseUrl (config): {BaseUrl}", baseUrl);
-            _logger.LogInformation("TMDB ApiKey (config): {ApiKey}", apiKey);
-
             _http = new HttpClient();
             _http.BaseAddress = new Uri(baseUrl!);
         }
@@ -31,23 +23,9 @@ namespace Infrastructure.Services
         {
             var fullUrl = $"{_http.BaseAddress}{endpoint}";
 
-            // LOG DE URL COMPLETA
-            _logger.LogInformation("TMDB requesting: {Url}", fullUrl);
-
             var response = await _http.GetAsync(endpoint);
 
-            if (!response.IsSuccessStatusCode)
-            {
-                _logger.LogWarning("TMDB returned error {StatusCode} on {Url}", 
-                    response.StatusCode, fullUrl);
-
-                return default;
-            }
-
             var json = await response.Content.ReadAsStringAsync();
-
-            // LOG DO JSON BRUTO
-            _logger.LogInformation("TMDB raw response: {Json}", json);
 
             return JsonSerializer.Deserialize<T>(json,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
